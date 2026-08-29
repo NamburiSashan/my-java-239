@@ -1,30 +1,34 @@
-package lab;
-class animal{
-    String name = " Lion,Tiger,Cheetah";
-	void wild(){
-    System.out.println(" Cheetah is the my favourite wild animal");
-	}
-}
-class bird extends animal{
-   String names = "EAGLE,PENGUIN";
-	 void fly(){
-	   System.out.println("EAGLE is my favourite bird");
+// File: MultilevelInheritance.java
+class Animal {
+    void eat() {
+        System.out.println("Animal eats food.");
     }
 }
-class sea extends bird {
-	String namess = "MEGALODON SHARK,KILLER WALES";
-	void water() {
-		System.out.println("MEGALODON is my favourite shark"); 
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks.");
     }
 }
-public class MultiLevel {
+
+// Puppy extends Dog, which extends Animal (Multilevel Chain)
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("Puppy is weeping.");
+    }
+}
+
+public class MultilevelInheritance {
     public static void main(String[] args) {
-		     sea s = new sea(); 
-		System.out.println(s.name);
-		s.wild();
-		System.out.println(s.names);
-		s.fly();
-		System.out.println(s.namess);
-		s.water();
-		    }
-		}
+        Puppy puppy = new Puppy();
+        
+        // Inherited from Animal (Grandparent)
+        puppy.eat();
+        
+        // Inherited from Dog (Parent)
+        puppy.bark();
+        
+        // Method belonging to Puppy
+        puppy.weep();
+    }
+}
