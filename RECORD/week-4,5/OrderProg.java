@@ -55,7 +55,7 @@ public customer(String name , String location){
 public class OrderProg {
     public static void main(String[] args) {
 
-customer c = new customer("REVANTH", "VIZIANAGARAM");
+customer c = new customer("Sashank", "Sheela nagar");
 specialorder so = new specialorder("26TH FEB", "21");
 c.sendorder(so);
 so.dispatch();
