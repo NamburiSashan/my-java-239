@@ -56,11 +56,11 @@ public class EmployeeData {
 	    public static void main(String[] args) {
 	        Employee e1 = new Employee();
 	        e1.show();
-	        Employee e2 = new Employee("REVANTH" , 221);
+	        Employee e2 = new Employee("sashank" , 239);
 	        e2.show();
-	        Employee e3  = new Employee("REVANTH" , 221 , "AI Engineer" , 70.000);
+	        Employee e3  = new Employee("sashank" , 239, "AI Engineer" , 70.000);
 	        e3.show();
-	        Employee e4 = new Employee("REVANTH" , 221 , "AI Engineer" , 75.000 , false);
+	        Employee e4 = new Employee("Sashank" , 239, "AI Engineer" , 75.000 , false);
 	         e4.show();
 
 	    }
